@@ -6,7 +6,6 @@ import ru.job4j.chess.firuges.Cell;
 import ru.job4j.chess.firuges.Figure;
 
 public class BishopBlackTest {
-
     @Test
     public void whenPositionIsTrue() {
         Cell ps = Cell.C8;
