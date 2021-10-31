@@ -7,13 +7,6 @@ import ru.job4j.chess.firuges.Figure;
 import ru.job4j.chess.firuges.black.BishopBlack;
 
 public class LogicTest {
-    @Test
-    public void move()
-            throws FigureNotFoundException, OccupiedCellException, ImpossibleMoveException {
-        Logic logic = new Logic();
-        logic.add(new BishopBlack(Cell.C1));
-        logic.move(Cell.C1, Cell.H6);
-    }
     @Test(expected = OccupiedCellException.class)
     public void whenMoveAndFigureNotFound()
             throws FigureNotFoundException, OccupiedCellException, ImpossibleMoveException {
@@ -37,6 +30,5 @@ public class LogicTest {
         Logic logic = new Logic();
         logic.add(new BishopBlack(Cell.C1));
         logic.move(Cell.C5, Cell.C6);
-
     }
 }
